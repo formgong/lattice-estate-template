@@ -2,8 +2,6 @@
 
 **Live demo:** https://estate.formgong.com · Download: the [latest release](https://github.com/formgong/lattice-estate-template/releases/latest) zip.
 
-> **License:** code under MIT. `img/shell.webp` and `img/frame.webp` were generated with FLUX.2 [klein] 9B, whose weights are under the FLUX Non-Commercial License; check the FLUX terms (https://bfl.ai/legal/terms-of-service) before commercial use, or replace them. The other three images (FLUX.2 [klein] 4B, Apache 2.0, and a drawing traced from one of them) carry no such restriction.
-
 Шаблон сайту будівельника люкс-будинків з формою Formgong
 
 A variation of [Lattice](https://github.com/formgong/lattice-template). It keeps the core: every border sits on a grid line, the frames draw from a corner, and the boxes slide in. On top of that, the page tells one build backwards. Scrolling rewinds a finished cliffside villa to the shell under construction, then to the bare concrete frame, then to the first drawing. The page ends on the team around a table with a consultation form.
@@ -25,7 +23,11 @@ The form sends `name`, `email`, `phone` (optional), `budget` and `message`. It s
 - Captions and timeline labels are in the `STAGES` array in the script.
 - With `prefers-reduced-motion: reduce`, the stages switch without wipes.
 
-**Images.** All five were made for this template on Cloudflare Workers AI, within the free daily allowance. The finished villa and the team are text-to-image with FLUX.2 [klein] 4B. The build and frame stages are FLUX.2 [klein] 9B edits of the villa. Each one was aligned with a straight-line-safe perspective warp and then locked to the villa photo: outside the house the stages are the photo pixel for pixel, so sky, sea and cliff never move, and the roof and slabs land within 1.5 px. The drawing is traced from the villa photo itself, so it matches by construction. Check the model terms at https://bfl.ai/legal/terms-of-service before you sell the images as part of a template.
+**Images.** All five were made for this template with FLUX.2 [klein] 4B (Apache 2.0) on Cloudflare Workers AI, within the free daily allowance.
+- The finished villa and the team are text-to-image.
+- The build stage is an edit of the villa, guided by a line drawing traced from it. The frame stage is an edit of an earlier build stage.
+- Both stages are locked to the villa photo. Outside the house they are the photo pixel for pixel, so sky, sea and cliff never move. The roof and the middle slab are the photo's own slabs, re-toned to raw concrete, so the edges line up across the wipe.
+- The drawing is traced from the villa photo.
 
 ## Українська
 
@@ -33,4 +35,4 @@ The form sends `name`, `email`, `phone` (optional), `budget` and `message`. It s
 
 **Форма:** замініть `fk_your_access_key` на ключ форми з кабінету Formgong. Форма надсилає ім'я, пошту, телефон, бюджет і повідомлення.
 
-**Картинки:** усі зроблено в Cloudflare Workers AI, у межах безкоштовної денної норми. Етапи стройки — це редагування фото вілли. Поза будинком вони піксель у піксель збігаються з фото, тож небо, море й скеля не рухаються, а дах і плити зсунуті не більше ніж на 1,5 px. Креслення обведене прямо з фото. Якщо ставите свій будинок, знімайте всі етапи з однієї точки.
+**Картинки:** усі п'ять зроблено моделлю FLUX.2 [klein] 4B (ліцензія Apache 2.0) у Cloudflare Workers AI, у межах безкоштовної денної норми. Поза будинком етапи стройки піксель у піксель збігаються з фото. Дах і середня плита взяті з самого фото й перефарбовані під сирий бетон, тож краї збігаються через «шторку». Креслення обведене з фото.
