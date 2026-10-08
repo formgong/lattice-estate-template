@@ -2,6 +2,10 @@
 
 **Live demo:** https://estate.formgong.com · Download: the [latest release](https://github.com/formgong/lattice-estate-template/releases/latest) zip.
 
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/formgong/lattice-estate-template) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fformgong%2Flattice-estate-template&project-name=lattice-estate&repository-name=lattice-estate)
+
+Each button copies the site to your GitHub and publishes it. Then replace `fk_your_access_key` in `index.html` of your copy with your Formgong access key (free at https://formgong.com/new) and commit: the host republishes on its own.
+
 Шаблон сайту будівельника люкс-будинків з формою Formgong
 
 A variation of [Lattice](https://github.com/formgong/lattice-template). It keeps the core: every border sits on a grid line, the frames draw from a corner, and the boxes slide in. On top of that, the page tells one build backwards. Scrolling rewinds a finished cliffside villa to the shell under construction, then to the bare concrete frame, then to the first drawing. The page ends on the team around a table with a consultation form.
