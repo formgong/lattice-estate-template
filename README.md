@@ -2,6 +2,8 @@
 
 **Live demo:** https://estate.formgong.com · Download: the [latest release](https://github.com/formgong/lattice-estate-template/releases/latest) zip.
 
+> **License:** code under MIT. `img/shell.webp` and `img/frame.webp` were generated with FLUX.2 [klein] 9B, whose weights are under the FLUX Non-Commercial License; check the FLUX terms (https://bfl.ai/legal/terms-of-service) before commercial use, or replace them. The other three images (FLUX.2 [klein] 4B, Apache 2.0, and a drawing traced from one of them) carry no such restriction.
+
 Шаблон сайту будівельника люкс-будинків з формою Formgong
 
 A variation of [Lattice](https://github.com/formgong/lattice-template). It keeps the core: every border sits on a grid line, the frames draw from a corner, and the boxes slide in. On top of that, the page tells one build backwards. Scrolling rewinds a finished cliffside villa to the shell under construction, then to the bare concrete frame, then to the first drawing. The page ends on the team around a table with a consultation form.
